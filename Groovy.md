@@ -10,7 +10,7 @@
 ![mysql badge](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white)
 ![aws badge](https://img.shields.io/badge/AWS-232f3e?style=flat-square&logo=amazon-aws&logoColor=white)
 
-![logo](./logos/groovy.png)
+![logo](./logos/groovy.jpeg)
 
 ### 💡 Summary
 'ConnectingDots' 라는 창업팀에서 활동하면서 그 첫번째 단계로 Grrovy 라는 웹앱을 기획했습니다.
