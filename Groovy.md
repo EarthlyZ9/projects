@@ -6,6 +6,9 @@
 
 ![python badge](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white)
 ![django badge](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=Django&logoColor=white)
+![drf badge](https://img.shields.io/badge/Django_Rest_Framework-094E20?style=flat-square&logo=Django&logoColor=white)
+![redis badge](https://img.shields.io/badge/redis-dc382d?style=flat-square&logo=redis&logoColor=white)
+![swagger badge](https://img.shields.io/badge/drf--yasg-4479a1?style=flat-square&logo=swagger&logoColor=white)
 
 ![mysql badge](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white)
 ![aws badge](https://img.shields.io/badge/AWS-232f3e?style=flat-square&logo=amazon-aws&logoColor=white)
