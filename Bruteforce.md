@@ -17,9 +17,10 @@
 
 ![logo](./logos/bruteforce.jpeg)
 
-![github](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white?link=https://github.com/linda2927/bruteforce)
+![github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white?link=https://github.com/linda2927/bruteforce)
 
-↑ 깃헙 레포 바로가기
+<a class="md-external-link" href="https://github.com/linda2927/bruteforce" target="_blank">깃헙 레포 바로가기</a>
+
 
 
 ### 💡 Summary
@@ -76,13 +77,10 @@ Bruteforce 는 '코드잇' 이라는 온라인 코딩 교육 플랫폼과 파트
 
 ### 프로젝트의 자세한 내용은 웹사이트를 참고해주세요!
 
-__참고! 현재 운영중인 웹사이트가 아니라 곳곳에 더미 데이터가 포함되어 있습니다 :(__
+__참고! 현재 운영중인 웹사이트가 아니기에 곳곳에 더미 데이터가 포함되어 있습니다 :(__
 
 
 
-[BruteForce 웹사이트 둘러보기](https://bruteforceuniv.com)
+<a class="md-external-link" href="https://www.bruteforceuniv.com" target="_blank">Bruteforce 웹사이트 둘러보기</a>
 
-로그인해서 둘러보고 싶다면?
-
-아이디: test123  
-비밀번호: testb-f!  
+> 로그인해서 둘러보고 싶다면? <br>아이디: test123 <br>비밀번호: testb-f!<
