@@ -81,6 +81,6 @@ __참고! 현재 운영중인 웹사이트가 아니기에 곳곳에 더미 데�
 
 
 
-<a class="md-external-link" href="https://www.bruteforceuniv.com" target="_blank">Bruteforce 웹사이트 둘러보기</a>
+[Bruteforce 웹사이트 둘러보기](https://www.bruteforceuniv.com)
 
 > 로그인해서 둘러보고 싶다면? <br>아이디: test123 <br>비밀번호: testb-f!<
