@@ -15,6 +15,10 @@
 
 ![logo](./logos/groovy.jpeg)
 
+![github](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white?link=https://github.com/linda2927/groovy-api)
+
+↑ 깃헙 레포 바로가기
+
 ### 💡 Summary
 'ConnectingDots' 라는 창업팀에서 활동하면서 그 첫번째 단계로 Grrovy 라는 웹앱을 기획했습니다.
 Groovy 는 지속되는 코로나19로 인해 대학생들이 겪고 있는 연결의 부재라는 문제를 해결하기 위한 프로젝트로

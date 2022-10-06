@@ -17,6 +17,10 @@
 
 ![logo](./logos/bruteforce.jpeg)
 
+![github](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white?link=https://github.com/linda2927/bruteforce)
+
+↑ 깃헙 레포 바로가기
+
 
 ### 💡 Summary
 '연희동 장사꾼' 이라는 창업 동아리에서 활동하면서 대학생을 타켓으로 하는 코딩 교육 사업인 BruteForce 프로젝트를 진행하였습니다.
