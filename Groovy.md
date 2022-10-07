@@ -7,6 +7,8 @@
 ![python badge](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white)
 ![django badge](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=Django&logoColor=white)
 ![drf badge](https://img.shields.io/badge/Django_Rest_Framework-094E20?style=flat-square&logo=Django&logoColor=white)
+![nginx badge](https://img.shields.io/badge/NGINX-009639?style=flat-square&logo=NGINX&logoColor=white)
+![redis badge](https://img.shields.io/badge/Gunicorn-499848?style=flat-square&logo=Gunicorn&logoColor=white)
 ![redis badge](https://img.shields.io/badge/redis-dc382d?style=flat-square&logo=redis&logoColor=white)
 ![swagger badge](https://img.shields.io/badge/drf--yasg-4479a1?style=flat-square&logo=swagger&logoColor=white)
 
@@ -42,6 +44,9 @@ Connecting Dots (이하 커닷) 는 ‘대학생들의 링크드인’이라는 
 기업 역시 기업의 특성에 맞는 젊은 인재를 찾고자 하는 니즈가 있다는 것 역시 파악하였습니다.
 이러한 기업들의 인사담당부서 역시 커닷의 핵심 사용자로 포용하는 것이 궁극적인 목표입니다.
 
+이러한 비전을 가지고 모인 커닷팀은 학생들이 관심사와 고민을 공유할 수 있는 Groovy 앱의 출시를 그 첫번째 걸음으로 삼았습니다. 단순히 소통할 수 있는 공간을
+만드는 것에서 더 나아가 본인의 진로나 관심사에 대한 열정과 고민을 모두 가진 대학생들이 건설적인 소통을 할 수 있는 공간을 만드는 것이 Groovy 의 취지입니다.
+
 
 #### 🗓 2022.01 ~ 2022.06
 
@@ -52,7 +57,7 @@ Connecting Dots (이하 커닷) 는 ‘대학생들의 링크드인’이라는 
 * 모임 내 그룹 채팅
 
 #### 🛠 Tech Stack
-* Python, Django, MySQL
+* Python, Django Rest Framework, MySQL, Nginx, Redis, Sentry
 * Deployment: AWS RDS, EC2
 
 
