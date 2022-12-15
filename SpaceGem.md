@@ -7,6 +7,7 @@
 
 ![logo](./logos/blue-gem-pixel.jpeg)
 
+[깃헙 레포 바로가기](https://github.com/linda2927/SpaceGem.git)
 
 
 

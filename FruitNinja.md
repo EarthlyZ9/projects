@@ -11,6 +11,7 @@
 
 ![logo](./logos/FruitNinja.jpeg)
 
+[깃헙 레포 바로가기](https://github.com/linda2927/FruitNinja.git)
 
 
 ### 💡 Summary
