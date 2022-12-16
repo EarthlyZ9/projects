@@ -15,7 +15,8 @@
 ![mysql badge](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white)
 ![aws badge](https://img.shields.io/badge/AWS-232f3e?style=flat-square&logo=amazon-aws&logoColor=white)
 
-![logo](./logos/groovy.jpeg)
+![logo](https://user-images.githubusercontent.com/89679621/208044109-a5eec75e-0102-424b-ad5d-733f939b3f7a.jpeg)
+
 
 ![github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)
 
