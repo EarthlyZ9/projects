@@ -52,6 +52,8 @@ Fruit Ninja 게임을 벤치마킹한 3D Hand Recognition 버전의 새로운 Fr
 본 프로젝트는 응용프로그래밍 수업에서 팀 프로젝트의 일환으로 진행한 것으로 총 3명이서 함께 작업한 결과물이다.
 Server, Client, Unity 부분으로 나누어 작업했으며, 나는 Unity 를 통한 시각화를 맡아 피처들을 구현했다.
 
+[원본 레포](https://github.com/jaehee329/FruitNinja)
+
 
 ### 📋 Features
 * 서버에서부터 받아온 손의 위치 및 모양에 따라 Hand 오브젝트 구현
