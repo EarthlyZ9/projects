@@ -5,7 +5,7 @@
 ![csharp badge](https://img.shields.io/badge/C_Sharp-239120?style=flat-square&logo=CSharp&logoColor=white)
 ![unity badge](https://img.shields.io/badge/Unity-ffffff?style=flat-square&logo=Unity&logoColor=black)
 
-![logo](./logos/blue-gem-pixel.jpeg)
+![logo](https://user-images.githubusercontent.com/89679621/208043866-09ea8336-d5bd-47b8-b653-e8bfadff7237.jpeg)
 
 [깃헙 레포 바로가기](https://github.com/linda2927/SpaceGem.git)
 
