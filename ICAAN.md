@@ -13,8 +13,6 @@
 ![mongodb badge](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white)
 ![aws badge](https://img.shields.io/badge/AWS-232f3e?style=flat-square&logo=amazon-aws&logoColor=white)
 
-![logo](https://user-images.githubusercontent.com/89679621/210506074-5dd3b2d9-1daf-4c97-8ed4-db02feb22584.png)
-
 
 ![github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)
 
