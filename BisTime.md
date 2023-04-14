@@ -19,6 +19,8 @@
 
 [깃헙 레포 바로가기](https://github.com/PI304/BisTime-API)
 
+[BisTime 서비스 바로가기](https://bistime.app)
+
 
 
 ### 💡 Summary
