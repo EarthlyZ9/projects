@@ -16,7 +16,7 @@
 
 ![logo](https://user-images.githubusercontent.com/89679621/226145943-074ce81c-ebdb-459f-a21e-b0e8968f3062.png)
 
-![github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white?link=https://github.com/linda2927/bruteforce)
+![github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)
 
 > **해당 프로젝트의 Repo 는 비공개입니다.**
 

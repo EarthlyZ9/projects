@@ -19,7 +19,7 @@
 
 ![logo](https://user-images.githubusercontent.com/89679621/208044374-ff3f13c9-fd12-46d0-8d29-5c8fb1c18e64.jpeg)
 
-![github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white?link=https://github.com/linda2927/bruteforce)
+![github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)
 
 [깃헙 레포 바로가기](https://github.com/EarthlyZ9/bruteforce)
 
