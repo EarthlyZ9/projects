@@ -7,7 +7,7 @@
 
 ![logo](https://user-images.githubusercontent.com/89679621/208043866-09ea8336-d5bd-47b8-b653-e8bfadff7237.jpeg)
 
-[깃헙 레포 바로가기](https://github.com/linda2927/SpaceGem.git)
+[깃헙 레포 바로가기](https://github.com/EarthlyZ9/SpaceGem.git)
 
 
 

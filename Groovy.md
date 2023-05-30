@@ -20,7 +20,7 @@
 
 ![github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)
 
-[깃헙 레포 바로가기](https://github.com/linda2927/groovy-api)
+[깃헙 레포 바로가기](https://github.com/EarthlyZ9/groovy-api)
 
 ### 💡 Summary
 'ConnectingDots' 라는 창업팀에서 활동하면서 그 첫번째 단계로 Groovy 라는 웹앱을 기획했다.

@@ -21,7 +21,7 @@
 
 ![github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white?link=https://github.com/linda2927/bruteforce)
 
-[깃헙 레포 바로가기](https://github.com/linda2927/bruteforce)
+[깃헙 레포 바로가기](https://github.com/EarthlyZ9/bruteforce)
 
 
 
