@@ -41,6 +41,11 @@ PinTalk 프로젝트를 기획하고 진행하게 되었다.
 *메인 웹사이트는 여전히 픽스가 진행되고 있으며, PinTalk NPM Package 는 보수 중에 있습니다.*
 
 
+**게스트와 호스트의 핀톡 서버 접속 로그**
+
+![video](https://github.com/EarthlyZ9/projects/assets/89679621/f5969d67-3f7b-468f-8972-03bb551ed817)
+
+
 #### 🗓 Collaborators
 본 프로젝트는 총 4명이서 함께 작업한 결과물이다. (디자이너 1명, 웹페이지 FE 1명, NPM Package 개발 FE 1명, 백엔드 API 1명)
 
