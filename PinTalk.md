@@ -43,7 +43,8 @@ PinTalk 프로젝트를 기획하고 진행하게 되었다.
 
 **게스트와 호스트의 핀톡 서버 접속 로그**
 
-![video](https://github.com/EarthlyZ9/projects/assets/89679621/f5969d67-3f7b-468f-8972-03bb551ed817)
+
+![핀톡 서버 시연](https://github.com/EarthlyZ9/projects/assets/89679621/e911f11a-e6cf-435e-a637-f1508dd1be85)
 
 
 #### 🗓 Collaborators
