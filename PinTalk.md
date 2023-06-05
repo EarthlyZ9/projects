@@ -13,7 +13,7 @@
 ![docker badge](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white)
 ![aws badge](https://img.shields.io/badge/AWS-232f3e?style=flat-square&logo=amazon-aws&logoColor=white)
 
-![logo](https://github.com/EarthlyZ9/projects/assets/89679621/2412b186-57f8-4456-93ad-345ec1605f70)
+![logo](https://github.com/EarthlyZ9/projects/assets/89679621/a9037b5a-1b20-429d-a7a5-6c2a527fbcef)
 
 ![github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)
 
@@ -41,10 +41,11 @@ PinTalk 프로젝트를 기획하고 진행하게 되었다.
 *메인 웹사이트는 여전히 픽스가 진행되고 있으며, PinTalk NPM Package 는 보수 중에 있습니다.*
 
 
+
 **게스트와 호스트의 핀톡 서버 접속 로그**
 
 
-![핀톡 서버 시연](https://github.com/EarthlyZ9/projects/assets/89679621/e911f11a-e6cf-435e-a637-f1508dd1be85)
+![video](https://github.com/EarthlyZ9/projects/assets/89679621/e911f11a-e6cf-435e-a637-f1508dd1be85)
 
 
 #### 🗓 Collaborators
