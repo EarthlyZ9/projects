@@ -10,7 +10,7 @@
 
 
 ![pm2 badge](https://img.shields.io/badge/PM2-2B037A?style=flat-square&logo=PM2&logoColor=white)
-![mongodb badge](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white)
+![mongodb badge](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=MongoDB&logoColor=white)
 ![aws badge](https://img.shields.io/badge/AWS-232f3e?style=flat-square&logo=amazon-aws&logoColor=white)
 
 
@@ -20,7 +20,7 @@
 
 ### 💡 Summary
 Play Idea 학회의 개발팀에서 활동하며 맡게 된 sw 외주 프로젝트로, 질병관리청 국립보건연구원의 주관 하에
-진행되고 있는 ICAAN 연구 프로젝트의 sw 연구원으로서 관리자 페이지와 사용자 웹앱 구현을 맡았다.
+진행되고 있는 ICAAN 연구 프로젝트의 sw 연구원으로서 백엔드 API 와 관리자 페이지 구현을 맡았다.
 
 [ICAAN 프로젝트 알아보기](http://icaan.co.kr) 
 
