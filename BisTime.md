@@ -17,10 +17,7 @@
 
 ![github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)
 
-[깃헙 레포 바로가기](https://github.com/PI304/BisTime-API)
-
-[BisTime 서비스 바로가기](https://bistime.app)
-
+[깃헙 레포 바로가기](https://github.com/EarthlyZ9/BisTime-API)
 
 
 ### 💡 Summary
@@ -45,36 +42,54 @@ BisTime 개발 프로세스는 Phase 1 과 Phase 2 로 나뉘어진다. Phase 1 
 *BisTime 프로젝트는 현재 Phase 1 이 완료되고, Phase 2 를 준비하고 있는 단계입니다. Phase 2 에 해당하는 API 는 완성되어 있으나 프론트엔드 개발자의 공백으로
 잠시 진행이 중단되어 있는 상태입니다.*
 
-#### 🗓 Collaborators
+#### 🗓 2023.01 ~ 2023.03
+
+#### 👥 Collaborators
 본 프로젝트는 총 2명이서 함께 작업한 결과물이다. (UI 디자인 및 프론트엔드 개발 1명, 기획, 프로젝트 총괄 및 백엔드 API 개발 1명)
 
 나는 프로젝트 기획과 총괄, 그리고 백엔드 API 개발을 맡았다.
 
-#### 🗓 Phase 1: 2023.01 ~ 2023.03
+#### 📋 Features
+1) 모임 및 일정 생성/수정/삭제
+   - 모임 하위에 모임날짜 후보와 모임날짜에 따라 개인 일정을 추가할 수 있는 DB 구조 설계
+   - 일정의 경우 하루를 48개의 블럭으로 나누어 bytearray 로 저장 (전체 availability 의 빠른 계산을 위함)
 
-### 📋 Phase 1 Features
-* 모임 생성: 날짜 및 시간 범위 선택
-* 모임 공유
-* 모임에 일정 추가
-* 날짜별 availability 표출
+2) 팀 및 하위 일정 생성/수정/삭제
+   - 48 X 7 의 bmp 파일로 개인 일정을 AWS S3 에 저장
+   - 여러 bmp 파일을 겹쳐 전체 availability 파악 방식
+
+3) Next.js FE 어플리케이션 배포자동화 (CI/CD)
+   - GitHub Actions 를 통해 Docker Hub 에 빌드한 이미지를 push 하고 ec2 에서 pull 하여 배포하는 방식
+   - macos 에서 이미지 빌드 시, ec2 ubuntu 에서 작동시킬 수 없어 Docker Buildx 를 이용하여 linux/amd64 로 빌드
+
+4) Backend API 배포
+   - EC2 + Docker Compose (Nginx, Django, MySQL 컨테이너)
+
+
+#### 🛠 Tech Stack
+* Python, Django DRF, Gunicorn, Nginx, MySQL, PyTest
+* Deployment: GitHub Actions, AWS EC2, Docker, Docker Compose
+
+#### 🔗 URLS
+- ~~[BisTime 서비스 바로가기]()~~ (도메인 만료됨😥)
+
 ---
-#### 🗓 Phase 2: ?
 
-### 📋 Phase 2 Features
-* 팀 생성
-* 팀원의 정기 일정을 등록 - 모든 팀원의 일정을 토대로 availability 계산
-* 팀의 정기 일정 등록
-* 팀과 연관된 instant event 생성
+### 📌 Trouble Shooting
+타입힌팅을 도입하고자 MyPy 를 사용하였지만 실제 Django 프로젝트에 엄격한 타입힌팅을 적용하기가 어려웠다. 
+이는 FastAPI 와는 다르게, Django 의 경우 처음 설계될 때 타입힌팅이 존재하지 않아 이를 적극 고려하여 설계된 것이 아니기도 하고
+타입힌팅과 별개로 작동하는 자체 ORM을 사용하기 때문임을 배웠다. 
+하지만 api 함수를 작성할 때 타입힌팅을 도입하면 가독성이 증가될 것이라고 생각해 부분적으로 도입하고자 했다.
+이에 따라 django-stubs 와 djangorestframework-stubs 를 통해 모델 쪽 타입힌팅을 생략할 수 있었다. 
+이 경험을 통해 프로젝트나 프레임워크의 특성을 생각하여 타이핑 정책을 도입하는 것이 바람하다는 배움을 얻을 수 있었다.
 
----
+### 📌 Achievements
+1) Pytest 라이브러리와 테스트 코드에 대한 이해
+2) Django ORM 과 ORM 최적화에 대한 이해
+3) 파이썬 타입힌팅과 MyPy 라이브러리에 대한 이해
+4) Bitmap 에 대한 이해
 
-### 🛠 Tech Stack
-* Python, Django, Gunicorn, Nginx, MySQL, PyTest
-* Deployment
-    * 1차 배포: AWS EC2, Docker, Docker Compose
-
-
-### 📌 Takeaways
+### 📌 Thoughts
 Phase 1 개발 기간 동안 가장 집중했던 부분은 코드의 품질이었다. 실제 프로덕트를 만드는 것이 목적이었던 만큼
 보다 실무에 가까운 기술들을 사용해보고, 실무에서 고민할 만한 사안들에 대해 고민하고자 했다.
 이번 프로젝트를 진행하면서 코드 품질 측면에서 많은 공부를 했던 부분이 바로 테스트 코드와 ORM 최적화에 
@@ -92,6 +107,6 @@ Postman 이나 Insomnia 같은 API 플랫폼을 사용하지 않고 1차적으�
 한번에 뜯어 고치는 것이 아니라, 평소에 개발을 할 때 효율적인 ORM 쿼리를 작성해야겠다는 생각이 들었다. 
 이 프로젝트를 시작으로 쿼리를 작성할 때 좀 더 효율성 관점에서 접근할 수 있게 되었다.
 
-
-- [Pytest With DRF](https://earthlyz9-dev.oopy.io/thoughts/pytest-with-drf)
-- [Django ORM 최적화 해보기](https://earthlyz9-dev.oopy.io/thoughts/django-orm-optimization) 
+- [Django Type Hinting](https://notion.earthlyz9.dev/thoughts/django-typehinting)
+- [Pytest With DRF](https://notion.earthlyz9.dev/thoughts/pytest-with-drf)
+- [Django ORM 최적화 해보기](https://notion.earthlyz9.dev/thoughts/django-orm-optimization) 

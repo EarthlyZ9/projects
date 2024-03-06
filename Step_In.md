@@ -27,22 +27,37 @@ Top-Down 흐름의 사고를 기록할 수 있을 것이라고 생각했다. 현
 
 #### 🗓 2023.05
 
-#### 🗓 Collaborators
+#### 👥 Collaborators
 본 프로젝트는 총 2명이서 함께 작업할 결과물이었다. 슬프게도 프론트엔드 개발자를 구하지 못했다.
 
 
 #### 📋 Features
-* JWT 를 이용한 인증 플로우
-* 카카오, 네이버, 구글 OAuth2 자체 구현
-* 프로젝트 CRUD
-* 프로젝트 내 step 과 item CRUD
+1) Full authentication flow
+   -  커스텀 UsernamePasswordAuthenticationFilter 을 통한 json 로그인
+   - 커스텀 JwtAuthenticationFilter 를 통한 jwt 인증 플로우(http-only secure cookie refresh token 이용)
+   - spring-boot-oauth2-client dependency 의 내부 코드를 참고하여 네이버/카카오/구글 OAuth2 로그인 구현
+
+2) 프로젝트 생성/수정/삭제
+   - DB 설계: 프로젝트 하위에 Step 을 생성 - 그 하위에 Item 을 생성 - 이전 Step 의 Item 을 부모 Item 으로 지정
+   - Flyway 를 사용한 migration 관리
 
 #### 🛠 Tech Stack
-* Frontend: ?
-* Backend: SpringBoot, SpringSecurity, OAuth2, MySQL, Flyway, Tomcat, Docker
+- Backend: SpringBoot, SpringSecurity, OAuth2, MySQL, Flyway, Tomcat, Docker
 
+---
 
-### 📌 Takeaways
+### 📌 Trouble Shooting
+API 만 개발하는 것이었기에, Spring security configuration 클래스의 ```oauth2Login()``` 을 사용할 수 없어
+자체 oauth2 서비스를 구현하기 위해 spring-security-oauth2-client 종속성의 내부 코드를 참고하였다. 
+이를 통해 OAuth2 프로토콜을 코드로서 이해하고, rest client 를 사용하여 직접 인증 요청을 보내는 코드를 작성할 수 있었다.
+
+### 📌 Achievements
+1) Spring Framework 동작 원리 이해
+2) Spring Security 의 Filter Chain 원리 이해
+3) OAuth2 프로토콜 이해
+   > Spring Security 를 사용한 인증 플로우 구축에 대한 자세한 내용은 이 [링크](https://notion.earthlyz9.dev/thoughts/spring-security/jwt-filter)의 포스팅 시리즈 참고
+   
+### 📌 Thoughts
 이번 프로젝트를 통해 Spring Framework 를 처음 접해보았다. 개인적으로 이 프로젝트의 목표는 'Spring Framework 와 친해지기' 
 그리고 'Spring Security 를 통해 나만의 인증 플로우 구축하기' 였다. Spring 이라는 프레임워크에 첫발을 딛은 도전이었는데
 정말 말로만 듣던 것처럼 생태계가 방대함을 느꼈다. 그래서 이 프로젝트의 목표를 Spring Framework 의 기본동작과 

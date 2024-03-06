@@ -37,31 +37,52 @@ PI Lab 에서 진행한 실험적인 프로젝트. 피험자들을 대상으로 
 
 > Survey Package > Package Parts > Package Subjects > Surveys > Sections
 
+#### 🗓 2023.02.20 ~ 2023.03.30
 
-#### 🗓 Collaborators
+#### 👥 Collaborators
 본 프로젝트는 총 3명이서 함께 작업한 결과물이다. (안드로이드 어플리케이션 1명, 관리자 웹페이지 FE 1명, 백엔드 API 1명)
 
 나는 백엔드 API 개발을 맡았다.
 
+#### 📋 Features
+1) Authentication
+   - http-only secure cookie refresh token, blaklist 처리를 통한 토큰 탈취에 대한 위험 관리
+   - 모바일 앱과 개인 정보 통신 시 AES 암/복호화 처리
 
-#### 🗓 2023.02.20 ~ 2023.03.30
+2) DB 설계 및 쿼리 작성
+   - 7 ~ 8 종류 가량의 설문 문항 유형이 있었고 (ex. likert) 유형별로 문제 지문과, 추가 지문, 선택 선지, 주관식 서술란 등을 구성, API 로 주고 받는 JSON 객체가 상당히 크고 depth 가 깊어서 Nested Object 로 다룸
+   - ORM 최적화 수행 및 Silk middleware 를 이용한 모니터링
+   - 소설문 생성/삭제, 소설문 내 다양한 문제 유형 및 선지 구성, 설문 패키지 생성 및 다수의 소설문 연결
 
-### 📋 Features
-* 소설문 생성, 삭제
-* 소설문 내 다양한 문제 유형 생성 및 선지 구성
-* 설문 패키지 생성 및 다수의 소설문 연결
-* 다수의 설문 패키지로 루틴 설정 (ex. 아침에 설문 패키지 1, 점심에 설문 패키지 2, 저녁에 설문 패키지 3 과 같은 루틴을 3일동안 반복)
-* 설문 패키지 구성을 엑셀 파일로 Export
-* 설문 패키지 응답을 엑셀 파일로 Export
-* 앱에서 오는 데이터 AES 암/복호화
+3) 데이터 엑셀 export
+   - Eager loading 을 통한 데이터 fetching
+   - 설문 패키지 구성과 응답을 xlsx 형태로 파싱하여 file download 기능 구현
 
+4) 배포
+   - EC2 + Docker Compose (Nginx, Gunicorn + Django, MySQL 컨테이너)
 
-### 🛠 Tech Stack
+#### 🛠 Tech Stack
 * Python, Django, Gunicorn, Nginx, MySQL, PyTest
 * Deployment: AWS S3, EC2, Docker Compose
 
+#### 🔗 URLS
+- ~~[Convey 서비스 바로가기]()~~ (도메인 만료됨😥)
 
-### 📌 Takeaways
+---
+
+### 📌 Trouble Shooting
+1:N 관계가 연쇄적으로 이어져 있는 nested 구조의 데이터를 fetch 하여 파일로 파싱하는 과정에서 
+쿼리가 불필요하게 많이 발생하는 현상을 포착하였다. silk middleware 를 사용하여 모니터링 해본 결과, 
+설문 응답 결과를 파싱하는 과정에서 108개의 쿼리가 발생하고 있다는 것을 확인하였고, 
+eager loading 을 통해 12 개까지 감소시킬 수 있었다.
+
+### 📌 Achievements
+1) Nested Object 의 효율적인 쿼리 - ORM 최적화
+2) AES 암호화 알고리즘에 대한 이해
+3) depth 가 깊은 DB 설계에 대한 고민
+4) pytest 를 이용한 통합 및 단위 테스트 이해 및 활용
+
+### 📌 Thoughts
 반환해야하는 데이터가 Nested 된 형태가 많아서 DB Diagram 설계할 때나 쿼리를 작성할 때 고민을 많이 할 수 밖에
 없었던 프로젝트였다. Eager loading 을 적절하게 사용해서 큰 객체를 반환해야하는 경우가 많았기 때문에
 DRF 의 ```prefetch_related()``` 나 ```select_related()``` 을 적극적으로 사용해볼 수 있는 
@@ -76,5 +97,3 @@ DRF 의 ```prefetch_related()``` 나 ```select_related()``` 을 적극적으로 
 바람직한 프로젝트 매니징과 개발 워크플로우에 대해 많은 고민들을 하게 된 것 같다.
 그리고 개인적으로도 코드를 작성하는 것 외에도 문서화와 문서들의 정리에 대해서 시간을 좀 더 할애하고
 신경써야겠다는 생각이 들었다...!
-
-***

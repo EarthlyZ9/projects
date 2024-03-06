@@ -73,7 +73,7 @@ Server, Client, Unity 부분으로 나누어 작업했으며, 나는 Unity 를 �
 * Windows Build, MacOS Build
 
 
-### 📌 Takeaways
+### 📌 Thoughts
 기술적인 문제들을 제외하고 유니티 스크립트를 작성함에 있어서 가장 많이 고민을 했던 부분은 GameManager 클래스에 대한 것이었다.
 GameManager 는 UI 관련 로직, 남은 기회, 현재 게임 상황 등 게임 진행에 필요한 데이터들을 모두 다 담고 있다. 싱글톤 패턴에 착안하여
 하나의 GameManager 인스턴스가 게임을 통제할 수 있도록 하는 것이 목표였기에 많은 변수들과 메소드들을 담게 되었는데, 실제 구동에는 문제가 없었지만

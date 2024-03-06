@@ -30,7 +30,7 @@ FastAPI 를 선택하였으며, 빠른 프론트엔드 개발을 위해 Jinja �
 
 #### 🗓 2023.02
 
-#### 🗓 Collaborators
+#### 👥 Collaborators
 본 프로젝트는 총 2명이서 함께 작업한 결과물이다. (프론트엔드 1명, 백엔드 & 프론트엔드 1명) 
 
 나는 관리자 페이지의 프론트엔드와 백엔드 API를 맡아 진행했다.
@@ -42,10 +42,15 @@ FastAPI 를 선택하였으며, 빠른 프론트엔드 개발을 위해 Jinja �
 #### 🛠 Tech Stack
 * Frontend: Jinja
 * Backend: MySQL, FastAPI, SqlAlchemy, Alembic, Uvicorn
-* Deployment: Docker Compose, Nginx, EC2 
+* Deployment: Docker Compose, Nginx, EC2
 
+---
 
-### 📌 Takeaways
+### 📌 Achievements
+1) Jinja Template 에 대한 이해
+2) [파이썬 패키지 구조 뜯어보기](https://notion.earthlyz9.dev/thoughts/deep-dive-python-package)
+
+### 📌 Thoughts
 이번 프로젝트에서 백엔드 스택을 주로 사용하는 DRF 가 아닌 FastAPI 를 선택한 이유는
 FastAPI 가 가진 손쉬운 OpenAPI (Swagger) 및 JSON Schema 관련 기능 때문이었다.
 애초에 endpoint 가 많지 않아 FastAPI 를 사용하면서 '빠르게' 개발할 수 있을 것 같다는
